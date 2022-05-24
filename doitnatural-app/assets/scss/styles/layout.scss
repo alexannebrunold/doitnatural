@@ -1,0 +1,74 @@
+.base-button-padding {
+  padding: var(--padding-top-bottom) var(--padding-left-right);
+}
+
+//Menu 
+.mobile-menu {
+  transform: translateX(-1000px);
+  transition: transform 1s ease-out;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: var(--pwhite);
+  border-right: 1px solid var(--plight-grey);
+  z-index: 10;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.mobile-menu-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 16px 32px 16px;
+}
+
+.animate-display-menu {
+  transform: translateX(0);
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition: transform 0.3s ease-out;
+  background-color: var(--pwhite);
+  z-index: 10;
+  border-right: 1px solid var(--plight-grey);
+}
+
+.animate-disappear-menu {
+  transform: translateX(-1000px);
+  height: 100vh;
+  transition: transform 0.3s ease-out;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: var(--pwhite);
+  border-right: 1px solid var(--plight-grey);
+  padding-left: 16px;
+}
+
+.desktop-menu {
+  display: block;
+  transform: translateX(0);
+  height: 100%;
+  width: 244px;
+  transition: transform 0.3s ease-out;
+  border-right: 1px solid var(--plight-grey);
+  padding-top: 24px;
+  background-color: var(--pwhite);
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.menu-content {
+  padding-top: 32px;
+}
+
+.width-full{
+  width: 100%;
+}

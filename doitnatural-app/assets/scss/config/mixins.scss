@@ -1,0 +1,20 @@
+// z-index
+@for $index from -10 through 20 {
+  .z-#{$index} {
+     z-index: #{$index};
+  }
+}
+
+//Margin-top
+@for $px from 0 through 1000 {
+  .margin-top-#{$px} {
+     margin-top: #{$px}px;
+  }
+}
+
+//Padding-top
+@for $px from 0 through 1000 {
+  .padding-top-#{$px} {
+     padding-top: #{$px}px;
+  }
+}
